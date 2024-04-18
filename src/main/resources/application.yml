@@ -1,0 +1,17 @@
+server:
+  port: 8585
+jms:
+  jwt:
+    security:
+      enabled: true
+    timezone: "America/Santiago"
+    issuer: "www.harf.cl"
+    token:
+      auth:
+        path: "/v1.0/oauth/client_credential/accestoken"
+      secret: "harf"
+      expiresIn: 3600 #seconds
+    excluded:
+      path: "/v1.0/multi,/v1.0/otra"
+
+   
