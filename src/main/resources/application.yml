@@ -9,7 +9,7 @@ jms:
     token:
       auth:
         path: "/v1.0/oauth/client_credential/accestoken"
-      secret: "harf"
+      secret: ${SECRET}
       expiresIn: 3600 #seconds
     excluded:
       path: "/v1.0/multi,/v1.0/otra"
